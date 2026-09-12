@@ -44,7 +44,7 @@ export function InfrastructureSection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <span className="w-12 h-px bg-foreground/20" />
-            Global infrastructure
+            Workflow infrastructure
           </span>
           
           <div className="grid lg:grid-cols-[auto_1fr] gap-8 lg:gap-16 items-stretch">
@@ -53,8 +53,8 @@ export function InfrastructureSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/world-3i68QNWJwmO7W19ztZWbevAwJQHzYL.png"
-                alt="Global network sphere"
+                src="/world-map.png"
+                alt="Dark world map with connected infrastructure routes"
                 className="w-full h-full object-contain object-center"
               />
             </div>
@@ -64,7 +64,7 @@ export function InfrastructureSection() {
               <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
               }`}>
-                Global by
+                Traceable by
                 <br />
                 <span className="text-muted-foreground">default.</span>
               </h2>
@@ -72,8 +72,8 @@ export function InfrastructureSection() {
               <p className={`mt-8 text-xl text-muted-foreground leading-relaxed max-w-lg transition-all duration-1000 delay-100 ${
                 isVisible ? "opacity-100" : "opacity-0"
               }`}>
-                Your agents run on distributed infrastructure across 29 regions.
-                Sub-50ms latency to 99% of the world.
+                Every workflow run carries its context from trigger to outcome.
+                Inspect the path, pause the next step, and replay the evidence.
               </p>
             </div>
           </div>
@@ -144,11 +144,11 @@ export function InfrastructureSection() {
             
             <div className="relative z-10">
               <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-8xl lg:text-[10rem] font-display leading-none">29</span>
-                <span className="text-2xl text-muted-foreground">regions</span>
+                <span className="text-8xl lg:text-[10rem] font-display leading-none">∞</span>
+                <span className="text-2xl text-muted-foreground">replayable context</span>
               </div>
               <p className="text-muted-foreground max-w-md">
-                Compute nodes distributed globally for maximum redundancy and minimum latency.
+                Each action stays attached to the run that produced it, so operators can understand outcomes instead of reconstructing them.
               </p>
             </div>
           </div>
@@ -158,15 +158,15 @@ export function InfrastructureSection() {
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-100 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">99.99%</span>
-              <span className="block text-sm text-muted-foreground mt-2">Uptime SLA</span>
+              <span className="text-5xl lg:text-6xl font-display">HITL</span>
+              <span className="block text-sm text-muted-foreground mt-2">Approval gates</span>
             </div>
             
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">&lt;50ms</span>
-              <span className="block text-sm text-muted-foreground mt-2">Global latency</span>
+              <span className="text-5xl lg:text-6xl font-display">RUN</span>
+              <span className="block text-sm text-muted-foreground mt-2">Execution history</span>
             </div>
           </div>
         </div>

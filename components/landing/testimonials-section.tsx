@@ -5,14 +5,14 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Our agents handle 80% of our customer support tickets autonomously. The ROI was immediate.",
+    quote: "When a workflow is visible, teams can improve it instead of guessing what happened.",
     author: "Sarah Chen",
     role: "CTO",
     company: "Meridian Labs",
     metric: { value: "80%", label: "Ticket resolution" },
   },
   {
-    quote: "We deployed research agents that work 24/7. They surface insights we'd never find manually.",
+    quote: "A shared execution record turns automation into something the whole team can trust.",
     author: "Marcus Webb",
     role: "Head of Research",
     company: "Flux Systems",

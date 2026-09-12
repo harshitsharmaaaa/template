@@ -9,7 +9,7 @@ const plans = [
     description: "For tinkering and small automations",
     price: { monthly: 0, annual: 0 },
     features: [
-      "3 concurrent agents",
+      "Prototype a workflow",
       "1,000 tasks/month",
       "Community support",
       "Basic logging",
@@ -23,7 +23,7 @@ const plans = [
     description: "For teams shipping with agents",
     price: { monthly: 79, annual: 65 },
     features: [
-      "25 concurrent agents",
+      "Build with your team",
       "50,000 tasks/month",
       "Priority support",
       "Full audit trails",
@@ -39,7 +39,7 @@ const plans = [
     description: "For agent-first organizations",
     price: { monthly: null, annual: null },
     features: [
-      "Unlimited agents",
+      "Bring your own governance",
       "Unlimited tasks",
       "24/7 dedicated support",
       "On-premise deployment",
@@ -78,7 +78,7 @@ export function PricingSection() {
           <div className="lg:col-span-7">
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-8">
               <span className="w-12 h-px bg-foreground/30" />
-              Pricing
+              Choose your entry point
             </span>
             <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
@@ -104,7 +104,7 @@ export function PricingSection() {
           </div>
         </div>
 
-        {/* Pricing cards - Horizontal layout with overlap */}
+        {/* Choose your entry point cards - Horizontal layout with overlap */}
         <div className="relative">
           <div className="grid lg:grid-cols-3 gap-4 lg:gap-0">
             {plans.map((plan, index) => (

@@ -7,7 +7,7 @@ const steps = [
     number: "01",
     title: "Define",
     subtitle: "your agent",
-    description: "Describe what your agent should do. Set its capabilities, constraints, and goals in natural language or code.",
+    description: "Describe the outcome, constraints, and systems your workflow can use. Start with the path you want to make repeatable.",
     code: `const researcher = new Agent({
   role: 'Research Analyst',
   capabilities: ['web', 'docs', 'api'],
@@ -19,7 +19,7 @@ const steps = [
     number: "02",
     title: "Assign",
     subtitle: "the task",
-    description: "Give your agent a mission. It breaks down complex tasks into steps and executes them autonomously.",
+    description: "Connect the trigger, decisions, tools, and approval points. Keep the sequence explicit so the team can inspect it.",
     code: `await researcher.execute({
   task: 'Analyze competitor pricing',
   sources: ['public-data', 'news'],
@@ -31,13 +31,13 @@ const steps = [
     number: "03",
     title: "Monitor",
     subtitle: "& scale",
-    description: "Track progress in real-time. Spin up more agents as needed. Pay only for compute used.",
+    description: "Run it with a visible execution history. Pause, replay, and improve the workflow from what actually happened.",
     code: `optimus.dashboard({
   agents: [researcher],
   metrics: ['tasks', 'latency', 'cost'],
   alerts: true
 })
-// 847 tasks completed today`,
+// inspect the full execution path`,
   },
 ];
 

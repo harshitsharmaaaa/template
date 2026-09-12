@@ -74,7 +74,7 @@ export function SecuritySection() {
           <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] mb-12 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}>
-            Autonomous,
+            Observable,
             <br />
             <span className="text-muted-foreground">not uncontrolled.</span>
           </h2>
@@ -84,7 +84,7 @@ export function SecuritySection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Your agents are powerful but constrained. Enterprise-grade security ensures they only do what you allow.
+              Your workflows are powerful because every action can be constrained, approved, and reviewed.
             </p>
           </div>
         </div>

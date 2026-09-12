@@ -7,8 +7,8 @@ const metrics = [
     value: 12847392, 
     suffix: "", 
     prefix: "",
-    label: "Tasks completed today",
-    sublabel: "by 23,847 active agents",
+    label: "Execution trace",
+    sublabel: "RUN_0428 · observable workflow",
   },
   { 
     value: 99, 

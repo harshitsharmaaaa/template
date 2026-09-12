@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Autonomous Execution",
-    description: "Deploy AI agents that work independently. They analyze, decide, and execute complex multi-step tasks without human intervention.",
-    stats: { value: "99.7%", label: "task completion" },
+    title: "Observable execution",
+    description: "See each step, decision, and handoff as the workflow moves from intent to outcome.",
+    stats: { value: "01", label: "visible run" },
   },
   {
     number: "02",
-    title: "Distributed Computing",
-    description: "Offload compute-heavy tasks to our global network. Your agents run on optimized infrastructure across 50+ regions worldwide.",
-    stats: { value: "50+", label: "global regions" },
+    title: "Human control",
+    description: "Pause before consequential actions, approve the next move, and keep people in the loop when it matters.",
+    stats: { value: "HITL", label: "approval gate" },
   },
   {
     number: "03",
-    title: "Multi-Agent Orchestration",
-    description: "Coordinate teams of specialized agents. They communicate, delegate, and collaborate to solve complex problems together.",
-    stats: { value: "1000x", label: "parallel execution" },
+    title: "Replayable runs",
+    description: "Replay a run from its trace, inspect the evidence, and understand exactly how the workflow reached its result.",
+    stats: { value: "∞", label: "replayable history" },
   },
   {
     number: "04",
-    title: "Secure Sandboxing",
-    description: "Each agent runs in isolated environments. Full audit trails, encrypted execution, and zero data leakage between tasks.",
-    stats: { value: "0", label: "data breaches" },
+    title: "Execution evidence",
+    description: "Keep a durable execution record with inputs, tool calls, approvals, and outputs in one place.",
+    stats: { value: "ALL", label: "execution evidence" },
   },
 ];
 
@@ -167,14 +167,14 @@ export function FeaturesSection() {
               >
                 Intelligent
                 <br />
-                <span className="text-muted-foreground">workers.</span>
+                <span className="text-muted-foreground">workflows.</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pb-4">
               <p className={`text-xl text-muted-foreground leading-relaxed transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}>
-                Deploy autonomous AI agents that execute complex tasks across distributed infrastructure. No supervision required.
+                Run agentic workflows where every meaningful state, decision and action stays visible.
               </p>
             </div>
           </div>
